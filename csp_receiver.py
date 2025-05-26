@@ -2,7 +2,7 @@ from flask import Flask, request
 import json
 import datetime
 
-# pip install flask --break-system-packages
+# pip3 install flask --break-system-packages
 # mkdir /usr/local/bin/csp_receiver
 # nano /usr/local/bin/csp_receiver/csp_receiver.py
 # copy, paste & save this
