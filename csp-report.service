@@ -1,0 +1,21 @@
+# nano /etc/systemd/system/csp-report.service
+# systemctl daemon-reexec
+# systemctl daemon-reload
+# systemctl enable csp-report
+# systemctl start csp-report
+
+[Unit]
+Description=CSP Report Receiver Flask App
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/usr/local/bin/csp_receiver
+ExecStart=/usr/bin/python3 /usr/local/bin/csp_receiver/csp_receiver.py
+Restart=always
+RestartSec=5
+Environment=FLASK_ENV=production
+
+[Install]
+WantedBy=multi-user.target
