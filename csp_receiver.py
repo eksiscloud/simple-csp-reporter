@@ -3,9 +3,11 @@ import json
 import datetime
 
 # pip install flask --break-system-packages
-# nano /usr/local/csp_receiver.py
+# mkdir /usr/local/bin/csp_receiver
+# nano /usr/local/bin/csp_receiver/csp_receiver.py
 # copy, paste & save this
-# chmod +x /usr/local/bin/csp_receiver.py
+# chmod +x /usr/local/bin/csp_receiver/csp_receiver.py
+# chown -R www-data:www-data /usr/local/bin/csp_receiver/
 
 app = Flask(__name__)
 
