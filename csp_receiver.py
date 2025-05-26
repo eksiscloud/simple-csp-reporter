@@ -7,7 +7,7 @@ import datetime
 # nano /usr/local/bin/csp_receiver/csp_receiver.py
 # copy, paste & save this
 # chmod +x /usr/local/bin/csp_receiver/csp_receiver.py
-# chown -R www-data:www-data /usr/local/bin/csp_receiver/
+# chown www-data:www-data /usr/local/bin/csp_receiver/csp_receiver.py
 
 app = Flask(__name__)
 
